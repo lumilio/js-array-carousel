@@ -36,9 +36,14 @@
     right: 0;
     bottom: 0;
     color: white;
+    display: none;
 }
 
 #box-mainpic .choice img{
+    display: block;
+}
+
+#box-mainpic .choice #didascalia{
     display: block;
 }
 
