@@ -57,10 +57,7 @@ document.getElementsByClassName('lil-photo')[active].classList.add('choice');
 // pulsanti
 
 const up = document.getElementById('swipe-up-button');
-up.addEventListener('click', function () {
-    document.getElementById("select1").style.backgroundColor="rgba(0, 0, 0, 0)";
-    document.getElementById("pic1").style.padding = "10px";
-})
+up.addEventListener('click', function () {})
 
 
 const down = document.getElementById('swipe-down-button');
