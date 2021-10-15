@@ -81,13 +81,17 @@
 
 /* pulsanti */
 
-#box-column #swipe-up-button{
+#swipe-up-button{
     position: absolute;
-    top: 10px;
+    top: 225px;
+    right: 340px;
+    font-size: larger;
 }
 
 #swipe-down-button{
     position: absolute;
-    bottom: 10px;
+    bottom: 210px;
+    right: 340px;
+    font-size: larger;
 }
 

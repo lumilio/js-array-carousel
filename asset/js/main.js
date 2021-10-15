@@ -58,7 +58,7 @@ for (let i = 0; i < items.length; i++) {
 }
 
 
-// il contenuto indicizzato assume una clsse 
+// l'indice corrente del loop assume una clsse 
 
 
 box_Main.innerHTML = theBigPic;
@@ -68,7 +68,7 @@ box_Column.innerHTML = theOptionPic;
 document.getElementsByClassName('lil-photo')[active].classList.add('choice');
 
 
-// conferisco interattività ai pulsanti
+// conferisco interattività ai pulsanti 
 
 
 let position = 0
