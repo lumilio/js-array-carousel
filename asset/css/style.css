@@ -36,6 +36,8 @@
     bottom: 0;
     color: white;
     display: none;
+    text-align: right;
+    padding: 20px;
 }
 
 #box-mainpic .choice img{
