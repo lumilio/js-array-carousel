@@ -13,13 +13,12 @@
 }
 
 
-/*---------- box per il carosello------ */
+/*---------- box display carosello------ */
 
 
 #box-mainpic{
     height: 100%;
     width: 80%;
-    background-color: burlywood;
     position: relative;
 }
 
@@ -48,7 +47,7 @@
 }
 
 
-/*---------- box selezionare l'immagine------ */
+/*---------- box per selezionare l'immagine------ */
 
 
 #box-column{
@@ -82,15 +81,13 @@
 
 /* pulsanti */
 
-#swipe-up-button{
+#box-column #swipe-up-button{
     position: absolute;
     top: 10px;
-    z-index: 2;
 }
 
 #swipe-down-button{
     position: absolute;
     bottom: 10px;
-
 }
 

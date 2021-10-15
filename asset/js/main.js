@@ -1,4 +1,7 @@
 
+
+// 3 arrey da 5 elementi ciascuno assegnati 
+
 const items = [
     'img/01.jpg',
     'img/02.jpg',
@@ -23,11 +26,20 @@ const text = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ]
 
+
+// inizializzo due div dalla DOM
+
+
 const box_Main = document.getElementById('box-mainpic');
 const box_Column = document.getElementById('box-column');
 
+
+// inizzializzo il contenuto intercambiabile dei due div 
+
+
 let theBigPic = '';
 let theOptionPic = '';
+
 let active = 0;
 
 for (let i = 0; i < items.length; i++) {
@@ -45,6 +57,10 @@ for (let i = 0; i < items.length; i++) {
     </div>`  
 }
 
+
+// il contenuto indicizzato assume una clsse 
+
+
 box_Main.innerHTML = theBigPic;
 document.getElementsByClassName('big-photo')[active].classList.add('choice');
 
@@ -52,16 +68,35 @@ box_Column.innerHTML = theOptionPic;
 document.getElementsByClassName('lil-photo')[active].classList.add('choice');
 
 
+// conferisco interattività ai pulsanti
 
 
-// pulsanti
+let position = 0
 
 const up = document.getElementById('swipe-up-button');
-up.addEventListener('click', function () {})
+up.addEventListener('click', function () {
+    if (position > 0){
+        --position;
+    }
+    document.querySelector('.lil-photo.choice').classList.remove('choice');
+    document.getElementsByClassName('lil-photo')[position].classList.add('choice');
+
+    document.querySelector('.big-photo.choice').classList.remove('choice');
+    document.getElementsByClassName('big-photo')[position].classList.add('choice');
+})
 
 
 const down = document.getElementById('swipe-down-button');
-down.addEventListener('click', function () {})
+down.addEventListener('click', function () {
+    if (position < items.length -1){
+        ++position;
+    }
+    document.querySelector('.lil-photo.choice').classList.remove('choice');
+    document.getElementsByClassName('lil-photo')[position].classList.add('choice');
+
+    document.querySelector('.big-photo.choice').classList.remove('choice');
+    document.getElementsByClassName('big-photo')[position].classList.add('choice'); 
+})
 
 
 
