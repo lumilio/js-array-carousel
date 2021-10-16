@@ -29,21 +29,18 @@ const text = [
 
 
 
-
+ //------------------ inizializzo due div dalla DOM
 
 const box_Main = document.getElementById('box-mainpic');
-const box_Column = document.getElementById('box-column');  //------------------ inizializzo due div dalla DOM
+const box_Column = document.getElementById('box-column'); 
 
-let theBigPic = '';
-let theOptionPic = '';    //----------------------- mantengo i dati presenti nel div ( i due pusanti )
+  
 
-
-
-
-
-//----------------------- aggiungo il contenuto nei div
+//----------------------- aggiungo il contenuto intercambiabile nei div
 
 let active = 0;
+let theBigPic = '';
+let theOptionPic = '';  
 
 for (let i = 0; i < items.length; i++) {   
     theBigPic += 
