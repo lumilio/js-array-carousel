@@ -28,18 +28,14 @@ const text = [
 
 
 
-//------------------ inizializzo due div dalla DOM
+
 
 
 const box_Main = document.getElementById('box-mainpic');
-const box_Column = document.getElementById('box-column');
-
-
-
-//----------------------- mantengo i dati presenti nel div ( i due pusanti )
+const box_Column = document.getElementById('box-column');  //------------------ inizializzo due div dalla DOM
 
 let theBigPic = '';
-let theOptionPic = box_Column.innerHTML;    //---( i due pusanti )
+let theOptionPic = box_Column.innerHTML;    //----------------------- mantengo i dati presenti nel div ( i due pusanti )
 
 
 
@@ -68,7 +64,7 @@ document.getElementsByClassName('lil-photo')[active].classList.add('choice');
 
 
 
-//----------------------- aggiungo del contenuto nei div
+//----------------------- aggiungo il contenuto nei div
 
 box_Main.innerHTML = theBigPic;
 box_Column.innerHTML = theOptionPic;   
@@ -79,11 +75,7 @@ box_Column.innerHTML = theOptionPic;
 
 
 
-
-
-
-
-// conferisco interattività ai pulsanti 
+// conferisco interattività ai 2 pulsanti 
 
 
 let position = 0;
