@@ -71,13 +71,17 @@ document.getElementsByClassName('lil-photo')[active].classList.add('choice');
 // conferisco interattività ai pulsanti 
 
 
-let position = 0
+let position = 0;
 
 const up = document.getElementById('swipe-up-button');
 up.addEventListener('click', function () {
     if (position > 0){
         --position;
     }
+    else if (position == 0){                                             //--------------------------------bonus
+        position = items.length -1;
+    }
+    
     document.querySelector('.lil-photo.choice').classList.remove('choice');
     document.getElementsByClassName('lil-photo')[position].classList.add('choice');
 
@@ -90,6 +94,9 @@ const down = document.getElementById('swipe-down-button');
 down.addEventListener('click', function () {
     if (position < items.length -1){
         ++position;
+    }
+    else if (position == items.length -1){                                  //--------------------------------bonus
+        position = 0;
     }
     document.querySelector('.lil-photo.choice').classList.remove('choice');
     document.getElementsByClassName('lil-photo')[position].classList.add('choice');
