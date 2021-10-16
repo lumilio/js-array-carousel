@@ -40,7 +40,8 @@ let theOptionPic = box_Column.innerHTML;    //----------------------- mantengo i
 
 
 
-//-------------- l'indice corrente del loop assume una clsse 
+
+//----------------------- aggiungo il contenuto nei div
 
 let active = 0;
 
@@ -59,15 +60,15 @@ for (let i = 0; i < items.length; i++) {
     </div>`  
 }
 
-document.getElementsByClassName('big-photo')[active].classList.add('choice');
-document.getElementsByClassName('lil-photo')[active].classList.add('choice');   
-
-
-
-//----------------------- aggiungo il contenuto nei div
-
 box_Main.innerHTML = theBigPic;
 box_Column.innerHTML = theOptionPic;   
+
+
+
+//-------------- l'indice corrente del loop assume una clsse 
+
+document.getElementsByClassName('big-photo')[active].classList.add('choice');
+document.getElementsByClassName('lil-photo')[active].classList.add('choice');   
 
 
 
