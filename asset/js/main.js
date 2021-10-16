@@ -35,7 +35,7 @@ const box_Main = document.getElementById('box-mainpic');
 const box_Column = document.getElementById('box-column');  //------------------ inizializzo due div dalla DOM
 
 let theBigPic = '';
-let theOptionPic = box_Column.innerHTML;    //----------------------- mantengo i dati presenti nel div ( i due pusanti )
+let theOptionPic = '';    //----------------------- mantengo i dati presenti nel div ( i due pusanti )
 
 
 
