@@ -34,6 +34,7 @@ const box_Main = document.getElementById('box-mainpic');
 const box_Column = document.getElementById('box-column');
 
 
+
 // inizzializzo il contenuto intercambiabile dei due div 
 
 
