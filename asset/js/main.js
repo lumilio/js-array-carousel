@@ -27,7 +27,8 @@ const text = [
 ]
 
 
-// inizializzo due div dalla DOM
+
+//------------------ inizializzo due div dalla DOM
 
 
 const box_Main = document.getElementById('box-mainpic');
@@ -35,15 +36,19 @@ const box_Column = document.getElementById('box-column');
 
 
 
-// inizzializzo il contenuto intercambiabile dei due div 
-
+//----------------------- mantengo i dati presenti nel div ( i due pusanti )
 
 let theBigPic = '';
-let theOptionPic = '';
+let theOptionPic = box_Column.innerHTML;    //---( i due pusanti )
+
+
+
+
+//-------------- l'indice corrente del loop assume una clsse 
 
 let active = 0;
 
-for (let i = 0; i < items.length; i++) {
+for (let i = 0; i < items.length; i++) {   
     theBigPic += 
     `<dv class="big-photo">
         <img src="${items[i]}" alt="">
@@ -58,15 +63,24 @@ for (let i = 0; i < items.length; i++) {
     </div>`  
 }
 
+document.getElementsByClassName('big-photo')[active].classList.add('choice');
+document.getElementsByClassName('lil-photo')[active].classList.add('choice');   
 
-// l'indice corrente del loop assume una clsse 
 
+
+//----------------------- aggiungo del contenuto nei div
 
 box_Main.innerHTML = theBigPic;
-document.getElementsByClassName('big-photo')[active].classList.add('choice');
+box_Column.innerHTML = theOptionPic;   
 
-box_Column.innerHTML = theOptionPic;
-document.getElementsByClassName('lil-photo')[active].classList.add('choice');
+
+
+
+
+
+
+
+
 
 
 // conferisco interattività ai pulsanti 
