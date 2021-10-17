@@ -58,7 +58,7 @@ for (let i = 0; i < items.length; i++) {
 }
 
 box_Main.innerHTML = theBigPic;
-box_Column.innerHTML = theOptionPic;   
+box_Column.innerHTML += theOptionPic;   //----------mantengo i due pulsanti
 
 
 

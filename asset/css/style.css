@@ -85,15 +85,15 @@
 
 #swipe-up-button{
     position: absolute;
-    top: 225px;
-    right: 340px;
+    top: 15px;
     font-size: larger;
+    z-index: 1;
 }
 
 #swipe-down-button{
     position: absolute;
-    bottom: 210px;
-    right: 340px;
+    bottom: 15px;
     font-size: larger;
+    z-index: 1;
 }
 
