@@ -1,32 +1,32 @@
 #mainbox{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 #centered-box{
-    width: 1500px;
-    height: 645px;
-    background-color: black;
+    width: 1200px;
+    height: 445px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 
-/*---------- box display carosello------ */
 
+
+/*---------- box per l'immagine del carosello------ */
 
 #box-mainpic{
-    height: 100%;
-    width: 80%;
+    height: 445px;
+    width: 1000px;
     position: relative;
 }
 
-/* .big-photo{} */
-
 .big-photo img{
+    height: 100%;
     width: 100%;
-    max-height: 100%;
+    object-fit: cover;
     display: none;
 }
 
@@ -49,22 +49,23 @@
 }
 
 
+
+
 /*---------- box per selezionare l'immagine------ */
 
-
 #box-column{
-    display: flex;
+    background-color: black;
+    height: 445px;
+    width: 200px;
     position: relative;
+    display: flex;
     align-items: center;
     flex-direction: column;
-    width: 20%;
-    height: 100%;
 }
 
 .lil-photo{
     width: 100%;
-    height: 20%;
-    
+    height: 20%;  
 }
 
 .lil-photo img{
@@ -72,28 +73,30 @@
     max-height: 100%;
     object-fit: cover; 
     opacity: 0.5;
-
 }
 
 #box-column .choice img{
     opacity: 1;
-    outline: 5px solid rgb(240, 233, 233);
-    outline-offset: -5px;  
+    outline: 3px solid rgb(240, 233, 233);
+    outline-offset: -3px;  
 }
 
-/* pulsanti */
+
+
+
+/* ------------------ pulsanti ---------------- */
 
 #swipe-up-button{
     position: absolute;
     top: 15px;
-    font-size: larger;
+
     z-index: 1;
 }
 
 #swipe-down-button{
     position: absolute;
     bottom: 15px;
-    font-size: larger;
+
     z-index: 1;
 }
 
