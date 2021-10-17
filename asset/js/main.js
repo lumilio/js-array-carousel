@@ -70,6 +70,12 @@ document.getElementsByClassName('lil-photo')[active].classList.add('choice');
 
 
 
+
+
+
+
+
+
 // conferisco interattività ai 2 pulsanti 
 
 
