@@ -86,17 +86,25 @@
 
 /* ------------------ pulsanti ---------------- */
 
-#swipe-up-button{
-    position: absolute;
-    top: 15px;
-
+#swipe-up-button , #swipe-down-button{ 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     z-index: 1;
+    position: absolute;
+    border: none;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#swipe-up-button{
+    top: 10px;
 }
 
 #swipe-down-button{
-    position: absolute;
-    bottom: 15px;
-
-    z-index: 1;
+    bottom: 10px;
 }
 
